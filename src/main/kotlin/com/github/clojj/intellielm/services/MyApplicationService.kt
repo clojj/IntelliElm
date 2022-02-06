@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.clojj.intellielm.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.clojj.intellielm.MyBundle
 
 class MyApplicationService {
 
