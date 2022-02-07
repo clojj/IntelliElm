@@ -24,6 +24,11 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.6.10")
+    implementation("com.github.ajalt.colormath:colormath:2.1.0")
+}
+
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
 intellij {
     pluginName.set(properties("pluginName"))
@@ -49,6 +54,12 @@ qodana {
 }
 
 tasks {
+    sourceSets {
+        java.sourceSets["main"].java {
+            srcDir("src/main/gen")
+        }
+    }
+
     // Set the JVM compatibility versions
     properties("javaVersion").let {
         withType<JavaCompile> {
