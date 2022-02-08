@@ -58,7 +58,6 @@ abstract class ElmWorkspaceTestBase : CodeInsightFixtureTestCase<ModuleFixtureBu
 
     override fun tearDown() {
         project.elmWorkspace.useToolchain(originalToolchain)
-        super.tearDown()
     }
 
 
