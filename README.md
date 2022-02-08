@@ -1,6 +1,6 @@
 ## Installation
 
-The only distribution of this plugin is currently by ZIP file. Please download a ZIP from the 
+The only way of testing this plugin is currently by building the ZIP with `gradlew buildPlugin`.
 
 
 ## Highlighted Features
